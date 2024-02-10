@@ -26,8 +26,8 @@ const Hero = (props) => {
             </div>
             <div>
               <div className="flex flex-row justify-between">
-                <h3>Wind</h3>
-                <p>{fetchedResult.current.wind_kph}</p>
+                <h3>Wind Speed</h3>
+                <p>{fetchedResult.current.wind_kph} kmp</p>
               </div>
               <div className="flex flex-row justify-between">
                 <h3>Cloud</h3>

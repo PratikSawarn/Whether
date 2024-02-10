@@ -5,7 +5,7 @@ const Days = (props)=> {
   const { fetchedResult } = props
 
   return (
-      <div className='w-[45vw] px-10 text-center bg-[#1E293B] rounded-xl text-white ml-5'>
+      <div className='w-full md:w-[45vw] px-5 mt-10 md:mt-0 md:px-10 text-center bg-[#1E293B] rounded-xl text-white md:ml-5'>
         {fetchedResult && (
 
         <div className="">

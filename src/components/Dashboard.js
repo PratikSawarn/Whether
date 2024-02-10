@@ -72,9 +72,9 @@ const Dashboard = (props) => {
 
 
   return (
-    <div className="w-full flex flex-row p-10 content-center justify-between">
+    <div className="w-full flex flex-col md:flex-row p-10 content-center justify-between">
       {fetchedResult && (
-        <div className="w-[50vw] h-max ">
+        <div className="w-full md:w-[50vw] h-max ">
           <div className="w-[100%] bg-[#1E293B] text-white rounded-md mb-5 outline-none">
             <input
               placeholder="Search..."
