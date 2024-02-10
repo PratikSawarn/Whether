@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Dashboard from './components/Dashboard';
 import getGeolocation from './Geolocation';
+import { FaLocationDot } from "react-icons/fa6";
 
 function App() {
 
@@ -50,9 +51,12 @@ function App() {
           <div className='w-full my-auto text-center'>
             <div className='w-full mb-10'>
               <h1 className=' text-7xl mb-4'>Welcome People</h1>
-              <p className='text-xl text-yellow-500'>we use your location to fetch the whether in your location...</p>
+              <p className='text-xl text-yellow-500'>We use your location <FaLocationDot /> to fetch the whether in your location...</p>
               {error && 
+              <>
                 <p className='text-[#94A3B8]'>{error}</p>
+                <p className='text-[#94A3B8]'>Refresh This page to get Your Location<FaLocationDot />..</p>
+              </>
               }
               
             </div>
